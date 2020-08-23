@@ -39,10 +39,6 @@ li {
   padding: 10vw;
 }
 
-.contents li {
-  text-align: center;
-}
-
 .contents a {
   text-decoration: none;
   font-size: 1rem;
@@ -177,7 +173,6 @@ li {
 
 #contact i {
   display: inline-block;
-  margin: 0 auto;
 }
 
 #contact a {
