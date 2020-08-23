@@ -39,6 +39,10 @@ li {
   padding: 10vw;
 }
 
+.contents li {
+  text-align: center;
+}
+
 .contents a {
   text-decoration: none;
   font-size: 1rem;
@@ -109,7 +113,8 @@ li {
 }
 
 #why > h3 {
-  text-indent: 1rem;
+  text-align: center;
+
 }
 
 #why p {
@@ -155,30 +160,33 @@ li {
   opacity: 1;
 }
 
-#contact .container {
-  margin: 10vw;
-  display: flex;
-}
-
-#contact .container ul {
+#contact ul {
   list-style: none;
-}
-
-.icon {
-  align-self: center;
+  width: 90vw;
   padding-left: 0;
 }
 
-#contact .info {
-  font-size: 0.8rem;
+#contact li {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 200px;
+  text-align: center;
+  margin-top: 6vh;
 }
 
-#contactform, #twitter {
+#contact i {
+  display: inline-block;
+}
+
+#contact a {
+  height: 75px;
   text-decoration: none;
   color: #333;
+  margin: 8vh;
 }
 
-#contactform:hover, #twitter:hover {
+#contact a:hover {
   cursor: pointer;
   text-decoration: underline #800000;
 }
@@ -259,7 +267,7 @@ header h1 span {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vw;
+  height: 100vh;
   background: black;
   opacity: 0;
   transition: .3s ease-in-out;
@@ -273,11 +281,12 @@ header h1 span {
   z-index: 9999;
   width: 100vw;
   max-width: 330px;
-  height: 100vw;
+  height: 100vh;
   background: #fff;
   transition: .3s ease-in-out;
   -webkit-transform: translateX(-105vw);
   transform: translateX(-105vw);
+  background-color: #333;
 }
 
 #nav-input:checked ~ #nav-close {
@@ -289,10 +298,6 @@ header h1 span {
   -webkit-transform: translateX(0vw);
   transform: translateX(0vw);
   box-shadow: 6px 0 25px rgba(0,0,0,.15);
-}
-
-#nav-content {
-  background-color: #333;
 }
 
 #nav-content i {
@@ -332,18 +337,22 @@ header h1 span {
     margin-right: 13vw;
   }
 
-  #contact .container {
-    margin: 6vh 20vw;
+  #contact ul {
+    margin-left: 10vw;
   }
 
-  #contact i {
-    font-size: 50px;
-    margin: 8px;
+  #contact li {
+    flex-direction: row;
+    height: 75px;
+    width: 80vw;
   }
 
-  #contact .info {
-    font-size: larger;
+  #contact a {
+    margin: 0;
+    margin-left: 10vw;
+    line-height: 75px;
   }
+
 }
 
 @media screen and (min-width:800px){
@@ -390,11 +399,11 @@ header h1 span {
     margin-right: 13vw;
   }
 
-  #contact i {
-    margin-left: 8vw;
-  }
+}
 
-  #contact li {
-    line-height: 80px;
+@media screen and (min-width:1000px) {
+  #contact ul {
+    width: 82vw;
+    margin-left: 18vw;
   }
 }
