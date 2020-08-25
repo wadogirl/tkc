@@ -353,42 +353,38 @@ header h1 span {
 }
 
 @media screen and (min-width:800px){
+  #who {
+    margin: 10px;
+  }
+
   #who .container {
     display: flex;
     justify-content: space-evenly;
   }
 
-  #who h2 {
-    margin-top: 80px;
-  }
-
-  #who img {
+  .shihan img {
     width: 40vw;
     height: 60vw;
+    margin-top: 7vh;
   }
 
-  .shihan img {
-    margin-left: 50px;
-    margin-top: 240px;
+  .shihan ul {
+    width: 50vw;
   }
 
   .teachers .container {
     display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 150px;
+    justify-content: space-around;
   }
 
   .teachers h1 {
-    margin-bottom: 150px;
+    margin-bottom: 7vh;
   }
-
-  .taizot {
-    width: 40vw;
-  }  
-
-  .taekot {
-    width: 40vw;
-    margin: 0;
+  
+  .teachers img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
   }
 
   #why {
@@ -398,9 +394,20 @@ header h1 span {
 
 }
 
-@media screen and (min-width:1000px) {
+@media screen and (min-width:1200px) {
+  
+  .shihan img {
+    width: 30vw;
+    height: 45vw;
+  }
+
   #contact ul {
     width: 82vw;
     margin-left: 18vw;
+  }
+
+  .teachers img {
+    width: 300px;
+    height: 300px;
   }
 }
