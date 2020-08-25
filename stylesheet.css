@@ -85,12 +85,8 @@ li {
   font-size: 1.3em;
 }
 
-#who ul {
-  margin: 30px 10vw 0 5vw;
-}
-
-.taekot {
-  margin: 40px 0 80px;
+.teachers h2 {
+  margin-bottom: 80px;
 }
 
 #why {
@@ -342,6 +338,10 @@ header h1 span {
     flex-direction: row;
     height: 75px;
     width: 80vw;
+  }
+
+  #contact i {
+    margin: 0;
   }
 
   #contact a {
