@@ -153,13 +153,13 @@ footer {
     text-align: center;
   }
 
-  a {
+  main a {
     background-color: #f3baba46;
     text-decoration: none;
     color: #333;
   }
 
-  a:hover {
+  main a:hover {
     text-decoration: underline;
     text-decoration-color: #800000;
   }
